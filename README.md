@@ -27,3 +27,15 @@ print("Today is:", today)
 
 tomorrow = today + timedelta(days = 1)
 print("Tomorrow will be:", tomorrow)
+
+
+
+#STRFTIME:
+
+from datetime import datetime
+now = datetime.now()
+a = now.strftimw(" %H: %M: %S")
+print("time:", a)
+
+x = now.strftime("%d/%m/%Y, %H: %M: %S")
+print("STRFTIME:", x)
